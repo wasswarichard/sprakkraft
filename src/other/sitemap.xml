@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>http://sprakkraft.org/</loc>
+  <lastmod>2018-06-26T11:56:01+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://sprakkraft.org/about</loc>
+  <lastmod>2018-06-26T11:55:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://sprakkraft.org/sprakkraft-reading-coach/</loc>
+  <lastmod>2018-06-26T11:56:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://sprakkraft.org/svt-sprakplay/</loc>
+  <lastmod>2018-06-26T11:56:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://sprakkraft.org/sprakchat-mentor/</loc>
+  <lastmod>2018-06-26T11:56:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://sprakkraft.org/sprakchat-student/</loc>
+  <lastmod>2018-06-26T11:56:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://sprakkraft.org/sprakchat/</loc>
+  <lastmod>2018-06-14T12:17:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://sprakkraft.org/assets/brochures/Sprakkraft_Reading_Coach_App.pdf</loc>
+  <lastmod>2018-06-26T11:55:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://sprakkraft.org/assets/brochures/Sprakkraft_Reading_Coach_App_ar.pdf</loc>
+  <lastmod>2018-06-26T11:55:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://sprakkraft.org/assets/brochures/SVT_Sprakplay_App.pdf</loc>
+  <lastmod>2018-06-26T11:55:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://sprakkraft.org/sprakchat.html</loc>
+  <lastmod>2018-06-14T12:17:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

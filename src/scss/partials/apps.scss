@@ -1,0 +1,161 @@
+.apps {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: $block-padding;
+
+  .app {
+    max-width: 33%;
+
+    .app-title {
+      position: relative;
+      font-size: 1.2rem;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $dark-green-color;
+        position: absolute;
+        margin: auto;
+        right: -5px;
+        top: 0;
+        bottom: 0;
+      }
+    }
+
+    &:last-child {
+      .app-title::after { display: none; }
+    }
+
+    .app-image {
+      display: block;
+      margin-bottom: 45px;
+      text-align: center;
+      height: 320px;
+      overflow: hidden;
+
+      img {
+        width: auto;
+        height: 100%;
+        display: inline-block;
+      }
+    }
+
+    .app-text {
+      padding: 0 55px;
+
+      .app-name {
+        font-size: 20px;
+        margin-bottom: 20px;
+
+        &#svt-title { color: #2EB4AD; }
+        &#lrc-title { color: #F6A623; }
+      }
+
+      .app-desc { font-weight: 300; }
+
+      .app-read-more {
+        display: block;
+        color: $dark-green-color;
+        margin-top: 10px;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+
+      .app-go-to-sprakchat {
+        display: inline-block;
+        border: 1px solid $dark-green-color;
+        padding: 9px 15px;
+        border-radius: 25px;
+        text-decoration: none;
+        color: $dark-green-color;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-right: 10px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: $dark-green-color;
+          color: #fff;
+        }
+      }
+    }
+
+    .app-btns {
+      margin-top: 30px;
+      padding-left: 55px;
+
+      img { width: 40%; }
+
+      #coming-soon {
+        font-family: $cursive-font;
+        color: $dark-green-color;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+// ************************************
+// MEDIA RULES
+// ************************************
+@media (max-width: 1010px) and (min-width: 750px) {
+  .apps {
+    .app {
+      .app-image { height: 240px; }
+    }
+  }
+}
+
+
+@media (max-width: 920px) {
+  .apps {
+    .app {
+      .app-text { padding: 0 20px; }
+
+      .app-btns { padding-left: 20px; }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .apps {
+    flex-direction: column;
+
+    .app {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid $light-grey-color;
+      max-width: 100%;
+
+      &:last-child {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .app-title::after { display: none; }
+
+      .app-text { padding: 0 20px; }
+
+      .app-btns {
+        padding-left: 20px;
+
+        img { width: 25%; }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .apps {
+    .app {
+      .app-btns {
+        img { width: 40%; }
+      }
+    }
+  }
+}

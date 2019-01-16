@@ -1,0 +1,40 @@
+.bottom-nav {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+
+  .bottom-nav-link {
+    margin-bottom: 0;
+    font-size: 18px;
+
+    a {
+      color: $dark-green-color;
+      border-bottom: 1px solid transparent;
+      transition: border .2s ease-in-out;
+
+      &:hover {
+        border-bottom: 1px solid $dark-green-color;
+      }
+    }
+
+    &:first-child {
+      margin-right: 90px;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $dark-green-color;
+        position: absolute;
+        margin: auto;
+        right: -45px;
+        top: 0;
+        bottom: 0;
+      }
+    }
+  }
+}

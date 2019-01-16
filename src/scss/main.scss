@@ -1,0 +1,62 @@
+@charset 'utf-8';
+
+// ************************************
+// VARIABLES
+// ************************************
+
+$images-path: 'assets/images/';
+
+$font-stack: ('Roboto', sans-serif);
+$bold-font: 'Heebo';
+$cursive-font: 'Kaushan Script';
+
+$dark-green-color: rgb(31, 93, 93);
+$light-green-color: rgb(160, 230, 231);
+$btn-green-color: rgb(106, 182, 183);
+$dark-grey-color: rgb(116, 116, 116);
+$light-grey-color: rgb(242, 242, 242);
+$yellow-color: rgb(254, 247, 122);
+
+$plp-green: rgb(195, 238, 187);
+$plp-yellow: rgb(244, 250, 164);
+$plp-red: rgb(239, 159, 148);
+
+$title-margin-bottom: 40px;
+$block-padding: 50px;
+
+// ************************************
+// IMPORTS
+// ************************************
+
+// HOME PAGE
+@import 'partials/base.scss';
+@import 'partials/nav-hero-wrapper.scss';
+@import 'partials/top-nav.scss';
+@import 'partials/i18n.scss';
+@import 'partials/hero.scss';
+@import 'partials/apps.scss';
+@import 'partials/personal-learning-profile.scss';
+@import 'partials/feedback.scss';
+@import 'partials/volunteer.scss';
+@import 'partials/support.scss';
+@import 'partials/bottom-nav.scss';
+@import 'partials/contacts.scss';
+@import 'partials/copyright.scss';
+
+// ABOUT US
+@import 'partials/page-about.scss';
+
+// SVT SPRAKPLAY
+@import 'partials/page-svt-sprakplay.scss';
+
+// LRC
+@import 'partials/page-lrc.scss';
+
+// Temporary hiding blocks which don't have info
+#read-more,
+.feedback-volunteers,
+.support-option-btn,
+.bottom-nav,
+.volunteer-text-btn {
+  display: none !important;
+}

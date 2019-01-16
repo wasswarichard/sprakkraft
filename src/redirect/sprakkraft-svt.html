@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Språkkraft</title>
+
+  <script>
+    // Getting OS
+    function getOS() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent)) return 'Android';
+      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) return 'iOS';
+      return 'unknown';
+    };
+    // Redirecting to AppStore/GooglePlay/sprakkraft.org depending on OS
+    // ***********SVT
+    function redirect() {
+      if (getOS() == 'Android') window.location.href = 'https://play.google.com/store/apps/details?id=se.svt.sprakplay&hl=en';
+      if (getOS() == 'iOS') window.location.href = 'https://itunes.apple.com/se/app/svt-spr%C3%A5kplay/id1146851405?l=en&mt=8';
+      if (getOS() == 'unknown') window.location.href = 'http://www.sprakkraft.org';
+    };
+  </script>
+</head>
+<body onload="redirect()">
+  
+</body>
+</html>

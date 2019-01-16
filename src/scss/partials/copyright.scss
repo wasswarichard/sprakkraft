@@ -1,0 +1,55 @@
+.copyright {
+  border-top: 1px solid #EEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  font-weight: 500;
+
+  .privacy-link {
+    color: $dark-green-color;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+}
+
+.social-title {
+  font-weight: 500;
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+  li a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 15px;
+  }
+
+  li:first-child a {
+    background-image: url($images-path + 'facebook.svg');
+  }
+
+  li:nth-child(2) a {
+    background-image: url($images-path + 'twitter.svg');
+  }
+
+  li:nth-child(3) a {
+    background-image: url($images-path + 'linkedin.svg');
+  }
+
+  li:last-child a {
+    width: 25px;
+    height: 25px;
+    background-image: url($images-path + 'youtube.svg');
+    margin-right: 0;
+  }
+}

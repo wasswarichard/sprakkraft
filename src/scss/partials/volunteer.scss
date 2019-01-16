@@ -1,0 +1,82 @@
+.volunteer {
+  padding-bottom: 10px;
+  padding-bottom: $block-padding;
+  padding-top: $block-padding;
+  border-top: 1px solid $light-grey-color;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .volunteer-top {
+    position: relative;
+  }
+
+  h4 {
+      text-transform: uppercase;
+      color: $dark-green-color;
+      font-size: 18px;
+    }
+
+  .btn {
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+
+  #volunteer-extra{
+    margin-top: 45px;
+    padding-top: 25px;
+    border-top: 1px solid $light-grey-color;
+    display: none;
+  }
+
+  .volunteer-text {
+    max-width: 45%;
+  }
+
+  h2 {
+    position: relative;
+    z-index: 999;
+    margin-bottom: 50px;
+  }
+
+  .volunteer-image {
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+    background-color: $light-grey-color;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    background-image: url($images-path + 'volunteers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .volunteer-text {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .volunteer-text-btn {
+      margin-top: 50px;
+      margin-bottom: 60px;
+    }
+  }
+}
+// ************************************
+// MEDIA RULES
+// ************************************
+
+@media (max-width: 920px) {
+  .volunteer {
+    .volunteer-text {
+      max-width: 100%;
+    }
+
+    .volunteer-image {
+      display: none;
+    }
+  }
+}

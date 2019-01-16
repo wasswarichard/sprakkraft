@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Språkchat - Start</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/images/sprakchat/sprakchat.ico"/>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <!-- Bootstrap styles -->
+  <link href="../bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="../sprakchat.min.css">
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K2677MM');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body class="sprakchat with-padding">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2677MM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Navigation bar with chat links for Mentor and Student sign up/in -->
+  <div class="sprakchat-navbar nav top-nav">
+    <div class="sprakchat-navbar-logo">
+      <a href="/sprakchat-student">
+        <img src="../assets/images/sprakchat/sprakchat-beta-logotype.svg" alt="Sprakchat logotype">
+      </a>
+    </div>
+
+    <div class="sprakchat-navbar-buttons">
+      <nav id="sprakchat-student-nav">
+        <div id="nav-toggle" onclick="toggleMenu()"></div>
+        <ul id="nav-links">
+          <li><a href="/">Home</a></li>
+          <li class="has-sub">
+            <a href="/about">About</a>
+            <ul class="sub">
+              <li><a href="/about#about">What we do</a></li>
+              <li><a href="/about#story">Our Story</a></li>
+              <li><a href="/about#vision">Vision</a></li>
+              <li><a href="/about#faq">FAQ</a></li>
+              <li><a href="/about#contacts">Contact us</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#">Apps</a>
+            <ul class="sub right-alighnment">
+              <li><a href="/sprakkraft-reading-coach">Språkkraft Reading Coach</a></li>
+              <li><a href="/svt-sprakplay">SVT Språkplay</a></li>
+              <li><a href="/sprakchat-mentor">Språkchat for Mentors</a></li>
+              <li><a href="/sprakchat-student">Språkchat for Students</a></li>
+            </ul>
+          </li>
+          <li><a href="http://press.sprakkraft.org/">Press</a></li>
+        </ul>
+        <button id="chat-student">
+          <a href="https://docs.google.com/forms/d/1kHJtevXJgwjOacyvLQoCrvrspam_aH3IY7V_h9-4yNk/viewform?edit_requested=true">Chat as a Student</a>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Onboarding -->
+  <!-- Carousel -->
+  <div id="carousel-onboarding" class="carousel slide" data-ride="carousel" data-interval="10000">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <!-- I: Hero -->
+      <div class="item active onboarding-slide hero-slide">
+        <div class="onboarding-slide-wrapper hero-slide-wrapper">
+          <h1>Welcome to Språkchat <span id="sprakchat-for">for student</span></h1>
+          <p class="onboarding-slide-desc">
+            If you are learning the Swedish language, register as a Student
+          </p>
+
+          <img class="onboarding-slide-img hero-slide-img student-img desktop-img" src="" alt="">
+        </div>
+      </div>
+
+      <!-- II: Smart filters -->
+      <div class="item onboarding-slide">
+        <div class="onboarding-slide-wrapper">
+          <div class="onboarding-slide-wrapper-top">
+            <div class="onboarding-slide-text">
+              <h1>Smart filters</h1>
+              <p class="onboarding-slide-desc student-desc">
+                Help you find a mentor/s to chat with.
+              </p>
+            </div>
+
+            <img class="onboarding-slide-img student-img" id="smart-filters-main-img" src="../assets/images/sprakchat/onboarding-02-student.png" alt="">
+            <img class="onboarding-slide-img student-img" id="smart-filters-second-img" src="../assets/images/sprakchat/onboarding-02-2-student.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- III: Earning points -->
+      <div class="item onboarding-slide">
+        <div class="onboarding-slide-wrapper">
+          <div class="onboarding-slide-wrapper-top">
+            <div class="onboarding-slide-text">
+              <h1 class="student-title">Earning points</h1>
+              <p class="onboarding-slide-desc student-desc">
+                Using words correctly turns them to known in vocabulary map and earns points.
+              </p>
+            </div>
+
+            <img class="onboarding-slide-img student-img" id="earning-points-img" src="../assets/images/sprakchat/onboarding-03-1-student.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- IV: Look up words -->
+      <div class="item onboarding-slide">
+        <div class="onboarding-slide-wrapper">
+          <div class="onboarding-slide-wrapper-top">
+            <div class="onboarding-slide-text">
+              <h1>Look up words</h1>
+              <p class="onboarding-slide-desc">
+                A student can look up words by tapping them in the Mentor's messages.
+              </p>
+            </div>
+            <img class="onboarding-slide-img" id="look-up-img" src="../assets/images/sprakchat/onboarding-03.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- V: Words highlighting -->
+      <div class="item onboarding-slide">
+        <div class="onboarding-slide-wrapper">
+          <div class="onboarding-slide-wrapper-top">
+            <div class="onboarding-slide-text">
+              <h1>Words highlighting</h1>
+              <p class="onboarding-slide-desc student-desc">
+                Språkkraft builds a model of the Student's vocabulary while learning.<br>
+                <br>
+                Both the Student and the Mentor can see what words the Student knows (green), what to learn now (yellow) and what to learn later (red). 
+              </p>
+            </div>
+
+            <img class="onboarding-slide-img student-img" id="highlighting-img-student" src="../assets/images/sprakchat/onboarding-04-student.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- VI: Visual vocabulary map -->
+      <div class="item onboarding-slide">
+        <div class="onboarding-slide-wrapper">
+          <div class="onboarding-slide-wrapper-top">
+            <div class="onboarding-slide-text">
+              <h1>Visual vocabulary map</h1>
+              <p class="onboarding-slide-desc">
+                Students can track their progress and update their knowledge through a visual vocabulary map.
+              </p>
+            </div>
+            <img class="onboarding-slide-img" id="visual-vocab-img" src="../assets/images/sprakchat/onboarding-05.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- VII: Help button -->
+      <div class="item onboarding-slide">
+        <div class="onboarding-slide-wrapper">
+          <div class="onboarding-slide-wrapper-top">
+            <div class="onboarding-slide-text">
+              <h1>Help button</h1>
+              <p class="onboarding-slide-desc">
+                Explore each screen's features by pressing the Help button.
+              </p>
+            </div>
+            <img class="onboarding-slide-img" id="help-img" src="../assets/images/sprakchat/onboarding-06.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-onboarding" role="button" data-slide="prev">
+      <span class="carousel-control-img" aria-hidden="true"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-onboarding" role="button" data-slide="next">
+      <span class="carousel-control-img" aria-hidden="true"></span>
+    </a>
+  </div>
+  <!-- Carousel END -->
+  <!-- Onboarding END -->
+
+  <div class="sprakchat-about">
+    <div class="sprakchat-about-blocks">
+      <div class="sprakchat-about-block sprakchat-about-student">
+        <div class="sprakchat-about-block-top">
+          <img class="student-cap" src="../assets/images/sprakchat/graduation-cap.svg" alt="">
+          <h3>As a student</h3>
+        </div>
+
+        <p>Get connected with established Swedes and develop your Swedish language with the help of the integrated language learning tools.</p>
+
+        <p class="sprakchat-about-block-note">* You must be at least 18 years old to use Språkchat</p>
+      </div>
+
+      <div class="sprakchat-video-wrapper">
+        <iframe src="https://www.youtube.com/embed/o4XadgBNWIk?rel=0&amp;showinfo=0"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                class="sprakchat-video">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="sprakchat-languages">
+    <h3>Integrated Language Support</h3>
+    <p>With Språkchat, learning Swedish is fast, easy and efficient. This unique web-based text chat service comes with unique integrated language support to <b>18 languages.</b></p>
+    <p>If there are words the student do not know, communication does not have to be interrupted, just tap the word and see the translation.</p>
+    <img src="../assets/images/sprakchat/languages.png" alt="">
+  </div>
+
+  <div class="sprakchat-communication-support">
+    <h3>Communication Support</h3>
+    <p>When communicating you will find the words are marked in the three following colors:</p>
+
+    <div class="colors-containers">
+      <div class="color-container" id="green-container">
+        <div></div>
+        <p>User should know these words</p>
+      </div>
+      <div class="color-container" id="yellow-container">
+        <div></div>
+        <p>User should learn these words now, while</p>
+      </div>
+      <div class="color-container" id="red-container">
+        <div></div>
+        <p>User can learn them later</p>
+      </div>
+    </div>
+
+    <div id="bulb-block">
+      <img src="../assets/images/sprakchat/light-bulb.svg" alt="">
+      <p id="bulb-message">Once you know a word, tap on it and change its color status from Red to Yellow or Green. This will reflect on your personal learning profile (Vocabulary) which will help you go to higher levels (A1, A2, B1, B1, C1, C2).</p>
+    </div>
+  </div>
+
+  <div class="sprakchat-sign-in">
+    <div class="sprakchat-sign-in-student">
+      <a href="https://docs.google.com/forms/d/1kHJtevXJgwjOacyvLQoCrvrspam_aH3IY7V_h9-4yNk/viewform?edit_requested=true">
+        <h4>Register your interest to sign up as a</h4>
+        <h4 class="sign-in-role">Student</h4>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer start -->
+  <div class="sprakchat-footer">
+    <div class="sprakchat-footer-left">
+      <div class="sprakchat-footer-logo">
+        <a href="/sprakchat-student">
+          <img src="../assets/images/sprakchat/sprakchat-beta-logotype.svg" alt="Sprakchat logotype">
+        </a>
+      </div>
+
+      <p class="sprakchat-footer-title">2018 - Språkkraft</p>
+      <p class="sprakchat-footer-left-desc">Språkkraft is non-profit association with the purpose to increase the pace of integration of refugees, newly arrived and other immigrants into Swedish society</p>
+    </div>
+
+    <div class="sprakchat-footer-right">
+      <h5>Legal</h5>
+      <p>
+        <a href="https://sprakkraft.org/node/sprakkraft-privacy-policy.html" target="_blank">Privacy Policy</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../jquery.min.js"></script>
+  <!-- Customized Bootstrap (using Carousel plugin only) -->
+  <!-- Config file for customized version of Bootstrap find here: -->
+  <!-- https://gist.github.com/anonymous/7a2f9b947240019a64ffc226cdc9e380 -->
+  <script src="../bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Switch between Student's and Mentor's slides
+      $('.switcher-input').change(function() {
+        var currentSlide = $('.onboarding-slide');
+        var switchers = $('.switcher-input');
+        var showMentorsSlide = $(this).prop('checked') == true;
+        if (showMentorsSlide) {
+          switchers.prop('checked', true);
+          currentSlide.addClass('mentor');
+        } else {
+          switchers.prop('checked', false);
+          currentSlide.removeClass('mentor');
+        };
+      });
+      // Change Hero slide images (on mobile version screenshots)
+      // Mentor images paths
+      var heroMentorImageDesktopSrc = '../assets/images/sprakchat/onboarding-01-hero-mentor.png';
+      var heroMentorImageMobileSrc = '../assets/images/sprakchat/onboarding-01-hero-mentor-mobile.png';
+      // Student images paths
+      var heroStudentImageDesktopSrc = '../assets/images/sprakchat/onboarding-01-hero-student.png';
+      var heroStudentImageMobileSrc = '../assets/images/sprakchat/onboarding-01-hero-student-mobile.png';
+      // Mentor and Student images elements
+      var heroMentorImage = $('.hero-slide-wrapper').children('img.mentor-img');
+      var heroStudentImage = $('.hero-slide-wrapper').children('img.student-img');
+      // Toggle images
+      function toggleHeroSlideImages() {
+        if ($(window).width() <= 900) {
+          heroMentorImage.attr('src', heroMentorImageMobileSrc);
+          heroStudentImage.attr('src', heroStudentImageMobileSrc);
+        } else {
+          heroMentorImage.attr('src', heroMentorImageDesktopSrc);
+          heroStudentImage.attr('src', heroStudentImageDesktopSrc);
+        };
+      };
+      toggleHeroSlideImages();
+      $(window).resize(function() {
+        toggleHeroSlideImages();
+      });
+    });
+  </script>
+  <script async src="../all.min.js"></script>
+</body>
+</html>
