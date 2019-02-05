@@ -6,6 +6,7 @@ import rename from 'gulp-rename';
 import concat from 'gulp-concat';
 import uglify from 'gulp-uglify';
 import del from 'del';
+import handlebars from 'gulp-compile-handlebars';
 
 const paths = {
   files: {
@@ -31,8 +32,16 @@ const paths = {
   assets: {
     src: 'src/assets/**/*',
     dest: 'dist/assets/'
+  },
+  templates: {
+    src: 'src/pages/**/*.handlebars',
+    dest: 'dist/'
   }
 };
+
+const templateOpts = {
+  batch: ['src/partials']
+}
 
 function copy(src, dest) {
   gulp.src(src)
@@ -71,8 +80,17 @@ export function scripts() {
     .pipe(connect.reload());
 }
 
+export function templates() {
+  return gulp.src(paths.templates.src)
+    .pipe(handlebars(null, templateOpts))
+    .pipe(rename(path => path.extname = '.html'))
+    .pipe(gulp.dest(paths.templates.dest))
+    .pipe(connect.reload());
+}
+
 export function watch(cb) {
   gulp.watch(paths.files.src, files);
+  gulp.watch(paths.templates.src, templates);
   gulp.watch(paths.styles.src, styles);
   gulp.watch(paths.scripts.src, scripts);
   cb();
@@ -94,6 +112,6 @@ export function browser() {
     .pipe(open({ uri: 'http://localhost:' + port}));
 }
 
-const build = gulp.series(clean, files, styles, scripts, gulp.parallel(serve, watch), browser);
+const build = gulp.series(clean, files, templates, styles, scripts, gulp.parallel(serve, watch), browser);
 
 export default build;
