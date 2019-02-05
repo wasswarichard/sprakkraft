@@ -1,0 +1,32 @@
+<nav>
+  <div id="nav-toggle" onclick="toggleMenu()"></div>
+  <ul id="nav-links">
+    <li><a href="/">Home</a></li>
+    <li class="has-sub">
+      <a href="/about">About</a>
+      <ul class="sub">
+        <li><a href="/about#about">What we do</a></li>
+        <li><a href="/about#story">Our Story</a></li>
+        <li><a href="/about#vision">Vision</a></li>
+        <li><a href="/about#faq">FAQ</a></li>
+        <li><a href="/about#contacts">Contact us</a></li>
+      </ul>
+    </li>
+    <li class="has-sub">
+      <a href="#">Apps</a>
+      <ul class="sub right-alighnment">
+        <li><a href="/sprakkraft-reading-coach">Språkkraft Reading Coach</a></li>
+        <li><a href="/svt-sprakplay">SVT Språkplay</a></li>
+        <li><a href="/sprakchat-mentor">Språkchat for Mentors</a></li>
+        <li><a href="/sprakchat-student">Språkchat for Students</a></li>
+      </ul>
+    </li>
+    <li><a href="http://press.sprakkraft.org/">Press</a></li>
+  </ul>
+
+  {{#if student}}
+  <button id="chat-student">
+    <a href="https://docs.google.com/forms/d/1kHJtevXJgwjOacyvLQoCrvrspam_aH3IY7V_h9-4yNk/viewform?edit_requested=true">Chat as a Student</a>
+  </button>
+  {{/if}}
+</nav>
