@@ -52,6 +52,9 @@ $block-padding: 50px;
 // LRC
 @import 'partials/page-lrc.scss';
 
+// UR
+@import 'partials/page-ur.scss';
+
 // Temporary hiding blocks which don't have info
 #read-more,
 .feedback-volunteers,
@@ -59,4 +62,8 @@ $block-padding: 50px;
 .bottom-nav,
 .volunteer-text-btn {
   display: none !important;
+}
+
+*:focus {
+  outline: none;
 }
