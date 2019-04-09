@@ -96,6 +96,20 @@
         font-size: 1.6rem;
       }
     }
+
+    &.app-ur {
+      .app-name {
+        color: #90237e;
+      }
+
+      .app-url {
+        display: block;
+        margin-top: 15px;
+        color: #4dac6f;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
   }
 }
 
