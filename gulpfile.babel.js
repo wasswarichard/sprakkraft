@@ -14,7 +14,8 @@ const paths = {
     dest: 'dist/'
   },
   styles: {
-    src: 'src/scss/main.scss',
+    main: 'src/scss/main.scss',
+    src: 'src/scss/**/*.scss',
     dest: 'dist/'
   },
   sprakchat: {
@@ -67,7 +68,7 @@ export function files(cb) {
 }
 
 export function styles(cb) {
-  scss(paths.styles.src, paths.styles.dest, 'all');
+  scss(paths.styles.main, paths.styles.dest, 'all');
   scss(paths.sprakchat.src, paths.sprakchat.dest, 'sprakchat');
   cb();
 }
