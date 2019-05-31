@@ -10,7 +10,7 @@ import handlebars from 'gulp-compile-handlebars';
 
 const paths = {
   files: {
-    src: ['src/pages/**/*.html', 'src/other/**/*'],
+    src: ['src/pages/**/*.html', 'src/other/**/*', 'src/redirect/**/*'],
     dest: 'dist/'
   },
   styles: {
